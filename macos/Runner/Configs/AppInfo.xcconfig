@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = test_application
+PRODUCT_NAME = random_background_color
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.testApplication
+PRODUCT_BUNDLE_IDENTIFIER = randombackgroundcolor.randomBackgroundColor
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2025 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2025 .random_background_color. All rights reserved.

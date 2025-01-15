@@ -1,6 +1,6 @@
 {
-    "name": "test_application",
-    "short_name": "test_application",
+    "name": "random_background_color",
+    "short_name": "random_background_color",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
