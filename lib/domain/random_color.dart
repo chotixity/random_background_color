@@ -43,7 +43,8 @@ class RandomColor {
     }
   }
 
-  ///A method to compute the foreground color based on the background color luminance
+  ///A method to compute the foreground color based on the background color 
+  ///luminance
   void computeForegroundColor() {
     final Color currentColor = backgroundColor.value;
     final luminance = currentColor.computeLuminance();
