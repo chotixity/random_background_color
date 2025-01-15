@@ -1,6 +1,7 @@
 import 'dart:ui';
+
+import 'package:random_background_color/domain/random_color.dart';
 import 'package:test/test.dart';
-import 'package:test_application/domain/random_color.dart';
 
 void main() {
   group("Test for the random color generation", () {
