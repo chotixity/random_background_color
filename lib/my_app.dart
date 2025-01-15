@@ -19,13 +19,13 @@ class _MyAppState extends State<MyApp> {
       onTap: _randomColor.generateRandomColor,
       child: ValueListenableBuilder(
         valueListenable: _randomColor.backgroundColor,
-        builder: (BuildContext context, Color color, _) {
+        builder: (_, Color color, __) {
           return Material(
             color: color,
             child: Center(
               child: ValueListenableBuilder(
                 valueListenable: _randomColor.foregroundColor,
-                builder: (BuildContext context, Color color, _) {
+                builder: (_, Color color, __) {
                   return Text(
                     'Hello, World!',
                     textDirection: TextDirection.ltr,
