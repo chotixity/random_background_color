@@ -1,7 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:test_application/domain/random_color.dart';
+import 'package:random_background_color/domain/random_color.dart';
 
 ///Creates a [MyApp] widget.
 class MyApp extends StatefulWidget {
@@ -24,10 +22,16 @@ class _MyAppState extends State<MyApp> {
         builder: (BuildContext context, Color color, _) {
           return Material(
             color: color,
-            child: const Center(
-              child: Text(
-                'Hello, World!',
-                textDirection: TextDirection.ltr,
+            child: Center(
+              child: ValueListenableBuilder(
+                valueListenable: _randomColor.foregroundColor,
+                builder: (BuildContext context, Color color, _) {
+                  return Text(
+                    'Hello, World!',
+                    textDirection: TextDirection.ltr,
+                    style: TextStyle(color: color),
+                  );
+                },
               ),
             ),
           );
