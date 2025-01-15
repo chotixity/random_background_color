@@ -13,8 +13,9 @@ void main() {
 
     test("does not repeat colors in the used colors list", () {
       final List<Color> usedColors = [];
+      const int testSampleSize = 1000;
 
-      for (int i = 0; i < 100; i++) {
+      for (int i = 0; i < testSampleSize; i++) {
         randomColor.generateRandomColor();
         final generatedColor = randomColor.backgroundColor.value;
         expect(usedColors.contains(generatedColor), false);
