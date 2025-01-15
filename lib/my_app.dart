@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
                 valueListenable: _randomColor.foregroundColor,
                 builder: (_, Color color, __) {
                   return Text(
-                    'Hello, World!',
+                    'Hello, there',
                     textDirection: TextDirection.ltr,
                     style: TextStyle(color: color),
                   );
